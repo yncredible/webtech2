@@ -1,4 +1,4 @@
 webtech2
 ========
 
-Oefeningen van yannicknijs voor Webtechnologie 2
+Oefeningen voor Webtechnologie 2

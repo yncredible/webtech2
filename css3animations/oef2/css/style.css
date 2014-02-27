@@ -58,7 +58,7 @@ body
 
 @-webkit-keyframes slideIn
 {
-0%{-webkit-transform:translateX(-700px); opacity:0;}
+70%{-webkit-transform:translateX(-700px); opacity:0;}
 100%{-webkit-transform:translateX(0); opacity:1;}
 }
 

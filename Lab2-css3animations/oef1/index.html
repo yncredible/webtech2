@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Oef1 CSS3 transitions &amp; animations</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+	<div class="circle" id="cirkel1"></div>
+	<div class="circle" id="cirkel2"></div>
+	<div class="circle" id="cirkel3"></div>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+
+			$("#cirkel3").on("click", function(){
+				$("#cirkel1").addClass("moveBall1");
+				$("#cirkel2").addClass("moveBall2");
+				$("#cirkel3").addClass("moveBall3");
+			});
+
+		});
+	</script>
+	
+</body>
+</html>

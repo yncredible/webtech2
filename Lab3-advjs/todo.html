@@ -3,15 +3,26 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Lab3 - Todo list</title>
+	<style type="text/css">
+		body{margin:0; padding:0; font-family:arial, sans-serif; background:#222;}
+		h1{color:#fff;}
+		ul{list-style-type:none; margin:0; padding:0;}
+		li{padding:20px;color:#fff; font-weight: bold;}
+		div{width:400px; margin:0 auto;}
+		.prior-high{background-color:red;}
+		.prior-med{background-color:rgb(255, 51, 0);}
+		.prior-low{background-color:rgb(255, 61, 0);}
+	</style>
 </head>
 <body>
 	
 <div>
 	<h1>IMDo App</h1>
 	<ul>
-		<li id="todo-item1">Learn about GIT</li>
-		<li id="todo-item2" class="todo">Experiment with CSS3 Animations</li>
-		<li id="todo-item3" class="todo">Becoming a javascript ninja</li>
+		<li id="todo-item1" class="prior-high">Learn about GIT</li>
+		<li id="todo-item2" class="prior-high">Experiment with CSS3 Animations</li>
+		<li id="todo-item3" class="prior-med">Becoming a javascript ninja</li>
+		<li id="todo-item4" class="prior-low">Learning javascript Frameworks</li>
 	</ul>
 </div>
 

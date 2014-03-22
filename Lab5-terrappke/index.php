@@ -22,23 +22,28 @@
   <body>
     <div class="row">
     	<div class="col-sm-8">
-    		<h1 id="vText">Terrappke doen!?</h1>
+    		<h1 id="vText">Even het weer scannen...</h1>
     	</div>
    		<div id="weather" class="col-sm-4 temp">
    			<h2></h2><canvas id="icon" width="75" height="75"></canvas>
    		</div>
     </div>
     <div class="row">
-		<div class="col-sm-6">
-			<p id="message">Ga je binnekort verder studeren en hou je net zoals ons van knappe websites bouwen..?</p>
-		</div>
-		<div class="col-sm-6">
-			<form action="" method="post">
-				<input type="email" required placeholder="Uw emailadres" name="email">
-				<input type="submit" value="inschrijven" name="btnSignup">
-			</form>
-		</div>
-    </di>
+  		<div class="col-sm-6">
+  			<p id="message">Ga je binnekort verder studeren en wil je net zoals ons niets liever doen dan knappe websites, mobile apps en webapplicaties bouwen? Dan ben jij een perfecte kandidaat voor onze opleiding Interactive Multimedia Design!</p>
+        <p>Kom mee een terraske doen aan onze Creativity Gym en neem meteen een kijkje in onze opleiding aan de Thomas More hogeschool in Mechelen.</p>
+        <p>Laat je email adres achter en we mailen de exacte datum, locatie en tijdstip naar je door.</p>
+  		</div>
+  		<div class="col-sm-6">
+  			<form action="" method="post">
+          <div class="input-group">
+            <span class="input-group-addon">@</span>
+    				<input class="form-control" type="email" required placeholder="Uw emailadres" name="email" id="email">
+          </div>
+  				<input class="btn" type="submit" value="inschrijven" name="btnSignup" id="btnSignup">
+  			</form>
+  		</div>
+    </div>
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

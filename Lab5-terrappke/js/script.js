@@ -19,43 +19,70 @@ $(document).ready(function(){
                 var cTemp = Math.round(data.currently.temperature);
                 var cType = data.currently.icon;
 
+                $('#weather h2').text(cTemp + "°");
+
+/*----------------------------------------*/
+
+                var skycon = new Skycons({"color": "#333"});
+                skycon.add("icon",cType);
+                skycon.play();
+
+/*----------------------------------------*/
+
                 switch(cType)
                 {
                     //clear-day, clear-night, rain, snow, sleet, wind, fog, cloudy, partly-cloudy-day, or partly-cloudy-night
                     case "clear-day":
                         if(cTemp >= 20)
                         {
-                            $("h1").text("Absoluut terraskes weer!");
+                            $("h1").text("Ideaal terrappkes weer! Heb jij ook een passie voor het web & apps? Dan ben je welkom bij ons op het terras!");
+                            $("body").addClass("clearday");
                         }
                         else
                         {
-                            $("h1").text("Terraskes weer!");
+                            $("h1").text("Terrappkes weer! Heb jij ook een passie voor het web & apps? Dan ben je welkom bij ons op het terras!");
+                            $("body").addClass("clearday");
                         }
                     break;
 
                     case "partly-cloudy-day":
                         if(cTemp >= 20)
                         {
-                            $("h1").text("Absoluut terraskes weer!");
+                            $("h1").text("Ideaal terrappkes weer! Heb jij ook een passie voor het web & apps? Dan ben je welkom bij ons op het terras!");
+                            $("body").addClass("partlycloudy");
                         }
                         else
                         {
-                            $("h1").text("Terraskes weer!");
+                            $("h1").text("Terrappkes weer! Heb jij ook een passie voor het web & apps? Dan ben je welkom bij ons op het terras!");
+                            $("body").addClass("partlycloudy");
                         }
                     break;
 
                     default:
-                        $("h1").text("Geen terraskes weer!");
+                            $("h1").text("Wij wachten op ideaal terrappkes weer! Heb jij ook een passie voor het web & apps? Dan ben je welkom bij ons op het terras!");
+                            $("body").addClass("otherweather");
                     break;
 
                 }
 
+/*----------------------------------------*/
 
-                $('#weather h2').text(cTemp + "°");
+                $("#email").on("keyup", function(){
+                    var eValue = $(this).val();
+                    var at = eValue.indexOf("@");
+                    var dot = eValue.indexOf(".");
 
-                var skycon = new Skycons({"color": "#333"});
-                skycon.add("icon",cType);
-                skycon.play();
+                    if(at != -1 && dot != -1)
+                    {
+                        $(".input-group-addon").html("&#10004;").css({"color": "#417634", "background-color": "#E0F0D5", "font-weight": "bold"});
+                    }
+                    else
+                    {
+                        $(".input-group-addon").html("&#10008;").css({"color": "darkred", "background-color": "#F1DEDE", "font-weight": "bold"});
+                    }
+                });
+
+/*----------------------------------------*/
 
             });
         }

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BUILDING APPS</title>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+    <body>
+    <div id="wrapper">
+        <div id="today">
+            <p><span class="day"></span></p>
+            <p><span class="temp"></span></p>
+            <canvas id="icon" width="60" height="60"></canvas>
+            <p><span class="summ"></span></p>
+            <p><span class="tempMin"></span><span class="tempMax"></span></p>
+        </div>
+        <div id="week">
+            <p class="summ"></p>
+            <ul id="dotw">
+                <li>
+                    <div class="nday1">
+                        <p><span class="day"></span></p>
+                        <canvas id="icon1" width="40" height="40"></canvas>
+                        <p><span class="tempMin"></span><span class="tempMax"></span></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="nday2">
+                        <p><span class="day"></span></p>
+                        <canvas id="icon2" width="40" height="40"></canvas>
+                        <p><span class="tempMin"></span><span class="tempMax"></span></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="nday3">
+                        <p><span class="day"></span></p>
+                        <canvas id="icon3" width="40" height="40"></canvas>
+                        <p><span class="tempMin"></span><span class="tempMax"></span></p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/skycons.js"></script>
+    <script src="js/script.js"></script>
+
+    </body>
+</html>

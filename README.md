@@ -43,12 +43,14 @@ In the Lab3 folder you will find a todo app, powered by a custom js Framework.
 >##Lab 4
 Building an app prototype using forecast.io.
 
-You can check out the finished product here: [www.yannicknijs.be/weather/](http://www.yannicknijs.be/weather/)
 
 In the Lab4 folder you will find 2 app prototypes:
 
 * **weatherApp_v1**: This was my first attempt. I used it to try to understand how to the forecast api is put together. It's unfinished, as in "un-styled".
-* **weatherApp_v2**: This is my finished product. I built a minimal weather app, based on a design I found on the internet. (***The design is included in the folder gfx***)
+* **weatherApp_v2**: This is my finished product built on **Bootstrap**. It's a minimal weather app, based on a design I found on the internet. (***The design is included in the folder gfx***)
+
+You can check out the finished product here: [www.yannicknijs.be/weather/](http://www.yannicknijs.be/weather/)
+
 
 ---
 

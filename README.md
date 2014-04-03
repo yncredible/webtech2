@@ -17,6 +17,8 @@ Introduction to Git
 
 We were taught how to use Git and the Git commands. From this point on we have to host our projects on Github (or Bitbucket).
 
+* First exercise to collaborate on a project with Git, was to make a mini recipe website in a group of 4, with 4 different dishes. The repo of this mini-project can be found [on Jurgen's page](https://github.com/jurgb/webtechweek1) .
+
 ---
 
 

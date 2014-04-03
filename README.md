@@ -27,8 +27,8 @@ We were taught how to code professional animations using CSS3.
 
 In the Lab2 folder you will find 2 exercises:
 
-* exercise no. 1 description:
-* exercise no. 2 description:
+* exercise no. 1 : Click on the square, and 2 other squares slide in
+* exercise no. 2 : Some kind of "choose user" screen, but then with some cool animations
 
 
 ---
@@ -37,6 +37,8 @@ In the Lab2 folder you will find 2 exercises:
 Advanced javaScript: Build your own JS Framework.
 
 In the Lab3 folder you will find a todo app, powered by a custom js Framework.
+
+***3/4/2014 UPDATE: The "click" functionality is still to be added later on.***
 
 ---
 
@@ -60,12 +62,25 @@ Building an app for We Are IMD: **Terrappke**
 
 In the Lab5 folder you will find my attempt. This assignment also required the use of the forecast api.
 
+***Terrappke is an app that invites passionate (future) students to the Creativity Gym terrace, to come and talk about Webdesign & Webdevelopment.***
+
 ---
 
 >##Lab 6
 Introduction to Nodejs, Express and Web sockets
 
+In the Lab6 folder you will find my first attempt to built a nodejs application.
+
+***3/04/2014 UPDATE: It still needs some work.***
+
 ---
+
+>##Lab 7
+Introduction to Sass, a css preprocessor.
+
+---
+
+
 
 
 	

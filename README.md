@@ -63,7 +63,7 @@ You can check out the finished product here: [www.yannicknijs.be/weather/](http:
 >##Lab 5
 Building an app for We Are IMD: **Terrappke**
 
-In the Lab5 folder you will find my attempt. This assignment also required the use of the forecast api.
+In the Lab5 folder you will find my attempt. This assignment also required the use of the forecast api. **Built on Bootstrap**
 
 ***Terrappke is an app that invites passionate (future) students to the Creativity Gym terrace, to come and talk about Webdesign & Webdevelopment.***
 
@@ -74,7 +74,10 @@ Introduction to Nodejs, Express and Web sockets
 
 In the Lab6 folder you will find my first attempt to built a nodejs application.
 
-***3/04/2014 UPDATE: It still needs some work.***
+* nodejs: Live voting on drinks
+* imdwall: voting on questions, built on **Bootstrap**
+
+***4/04/2014 UPDATE: It still needs some work.***
 
 ---
 
@@ -82,6 +85,12 @@ In the Lab6 folder you will find my first attempt to built a nodejs application.
 Introduction to Sass, a css preprocessor.
 
 ---
+
+>##Lab 8
+Backbone.js workshop and live coding session, hosted by District01.
+
+---
+
 
 
 

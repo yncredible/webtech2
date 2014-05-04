@@ -1,27 +1,28 @@
 extends layout
 
-block nav
-  nav
-   ul
-    li
-     a(href='/') Home
-    li
-     a(href='/ask') Ask
-    li
-     a(href='/questions') Questions
-    li
-     a(href='/moderate') Moderate
-
 block content
-  h1= title
-  p Welcome to #{title}
 
+  nav(class='navbar navbar-inverse navbar-fixed-top' role='navigation')
+      div(class='container')
+        div(class='navbar-header')
+          button(type="button", class="navbar-toggle", data-toggle="collapse", data-target=".navbar-collapse")
+            span(class="sr-only") Toggle navigation
+            span(class="icon-bar")
+            span(class="icon-bar")
+            span(class="icon-bar")
+          a(class="navbar-brand", href="/") IMDWall
+
+        div(class='navbar-collapse collapse')
+          ul(class='nav navbar-nav')
+            li
+              a(href='/') Home
+            li
+              a(href='/ask') Ask
+            li
+              a(href='/questions') Questions
+            li
+              a(href='/moderate') Moderate
   
   div
-   h2 Moderators can log in here
-   form(action='#' method='post')
-    label username
-    input(type='text')
-    label password
-    input(type='password')
-    input(type='submit', value='Log in')
+  h1 Hello
+

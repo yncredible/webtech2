@@ -35,7 +35,7 @@ app.get('/users', user.list);
 /**
  * Faye uitbreiding
  */
-
+ 
 var faye = require('faye');
 var bayeux = new faye.NodeAdapter({mount: '/faye'});
 var server = http.createServer(app);

@@ -1,0 +1,27 @@
+extends layout
+
+block nav
+  nav
+   ul
+    li
+     a(href='/') Home
+    li
+     a(href='/ask') Ask
+    li
+     a(href='/questions') Questions
+    li
+     a(href='/moderate') Moderate
+
+block content
+  h1= title
+  p Welcome to #{title}
+
+  
+  div
+   h2 Moderators can log in here
+   form(action='#' method='post')
+    label username
+    input(type='text')
+    label password
+    input(type='password')
+    input(type='submit', value='Log in')

@@ -8,6 +8,12 @@
   "dependencies": {
     "express": "3.5.0",
     "jade": "*",
-    "faye": "*",
+    "faye": "*"
+  },
+  "devDependencies": {
+    "gulp": "~3.6.2",
+    "gulp-minify-css": "~0.3.4",
+    "gulp-concat-css": "~0.1.4",
+    "gulp-watch": "~0.6.4"
   }
 }

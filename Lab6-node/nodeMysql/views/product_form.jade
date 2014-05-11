@@ -1,0 +1,11 @@
+extends layout
+
+block content
+	h2 Add product
+	hr
+
+	form(action='/products/add', method='post')
+		p
+			input(type='text', name='product[name]', placeholder='Name of the product')
+		p
+			input(type='submit', value='Add product')

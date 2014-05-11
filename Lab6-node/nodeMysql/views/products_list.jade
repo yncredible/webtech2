@@ -1,0 +1,12 @@
+extends layout
+
+block content
+	h2 List of products
+	hr
+	a(href='/products/add') Add product
+	hr
+
+	ul
+		each product in products
+			li
+				a(href='/products/view#{product.id}') #{product.name}

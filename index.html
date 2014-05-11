@@ -3,35 +3,36 @@
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
-
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
     <title>Webtech2 by yncredible</title>
   </head>
 
   <body>
+    <div id="container">
+      <div class="inner">
 
-    <header>
-      <div class="container">
-        <h1>Webtech2</h1>
-        <h2>Oefeningen voor Webtechnologie 2</h2>
+        <header>
+          <h1>Webtech2</h1>
+          <h2>Oefeningen voor Webtechnologie 2</h2>
+        </header>
 
-        <section id="downloads">
-          <a href="https://github.com/yncredible/webtech2/zipball/master" class="btn">Download as .zip</a>
-          <a href="https://github.com/yncredible/webtech2/tarball/master" class="btn">Download as .tar.gz</a>
-          <a href="https://github.com/yncredible/webtech2" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/yncredible/webtech2/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+          <a href="https://github.com/yncredible/webtech2/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+          <a href="https://github.com/yncredible/webtech2" id="view-on-github" class="button"><span>View on GitHub</span></a>
         </section>
-      </div>
-    </header>
 
-    <div class="container">
-      <section id="main_content">
-        <h1>
+        <hr>
+
+        <section id="main_content">
+          <h1>
 <a name="webtechnologie-2" class="anchor" href="#webtechnologie-2"><span class="octicon octicon-link"></span></a>Webtechnologie 2</h1>
-
-<p>View this repo's website here: <a href="http://yncredible.github.io/webtech2/">http://yncredible.github.io/webtech2/</a></p>
 
 <hr><ul>
 <li>Lab 1:    Introduction to Git and Github.</li>
@@ -52,7 +53,95 @@
 
 <ul>
 <li>First exercise to collaborate on a project with Git, was to make a mini recipe website in a group of 4, with 4 different dishes. The repo of this mini-project can be found <a href="https://github.com/jurgb/webtechweek1">on Jurgen's page</a> .</li>
-</ul><hr><blockquote>
+</ul><h4>
+<a name="lessons-learned" class="anchor" href="#lessons-learned"><span class="octicon octicon-link"></span></a>Lesson's learned</h4>
+
+<p><strong><em>Why Git?</em></strong></p>
+
+<pre><code>. Fool-proof coding
+. collaboration
+. reliable deployment
+. backups!
+</code></pre>
+
+<p><strong><em>Core concepts</em></strong></p>
+
+<pre><code>. clone
+. add/commit
+. push / pull
+. branching / checkout
+. merge / rebase
+</code></pre>
+
+<p><strong><em>Commands</em></strong></p>
+
+<table>
+<thead><tr>
+<th>cmd</th>
+<th>descr.</th>
+</tr></thead>
+<tbody>
+<tr>
+<td><strong>git clone</strong></td>
+<td>git clone (link)</td>
+</tr>
+<tr>
+<td><strong>git add</strong></td>
+<td>git add (files)</td>
+</tr>
+<tr>
+<td><strong>git commit</strong></td>
+<td>git commit -m "message"</td>
+</tr>
+<tr>
+<td><strong>git pull</strong></td>
+<td>git pull (origin master)</td>
+</tr>
+<tr>
+<td><strong>git push</strong></td>
+<td>git push origin master</td>
+</tr>
+<tr>
+<td><strong>git checkout</strong></td>
+<td>git checkout -b "name"</td>
+</tr>
+<tr>
+<td><strong>git checkout</strong></td>
+<td>git checkout &lt; file &gt;</td>
+</tr>
+<tr>
+<td><strong>git branch</strong></td>
+<td>git branch</td>
+</tr>
+<tr>
+<td><strong>git status</strong></td>
+<td>git status</td>
+</tr>
+</tbody>
+</table><p><strong><em>Workflow</em></strong></p>
+
+<pre><code>1. git pull
+2. git checkout -b branch-name
+3. {{ work here }}
+4. git add .
+5. git status (git diff)
+6. git commit -m "detailed msg"
+7. git checkout master
+8. git merch branch-name
+9. git push
+</code></pre>
+
+<p><strong><em>Pull requests</em></strong></p>
+
+<pre><code>. FORK repository
+. add git remote upstream
+. git fetch upstream / git merge upstream
+. make changes and publish
+. issue pull request
+. repo owner will evualuate and merge your code
+</code></pre>
+
+<hr><blockquote>
 <h2>
 <a name="lab-2" class="anchor" href="#lab-2"><span class="octicon octicon-link"></span></a>Lab 2</h2>
 
@@ -66,7 +155,68 @@
 <ul>
 <li>exercise no. 1 : Click on the square, and 2 other squares slide in</li>
 <li>exercise no. 2 : Some kind of "choose user" screen, but then with some cool animations</li>
-</ul><hr><blockquote>
+</ul><h4>
+<a name="lessons-learned-1" class="anchor" href="#lessons-learned-1"><span class="octicon octicon-link"></span></a>Lesson's learned</h4>
+
+<p>Mastering CSS animation and transitions.</p>
+
+<pre><code>animations
+transitions
+transformations
+translates
+</code></pre>
+
+<p><strong>YOU WILL BE CREATING ANIMATIONS WHERE YOU CALL A TRANSFORMATION THAT USES A TRANSLATE FUNCTION</strong></p>
+
+<p><strong><em>Transistions</em></strong></p>
+
+<pre><code>. animation between changes
+. properties we want to animate need to be defined
+. triggered by adding classes of ( :hover )
+. repaints (visibility) reflows (layout)
+. can be bad for performance!
+</code></pre>
+
+<p><strong><em>example</em></strong></p>
+
+<pre><code>. transition: property duration timing-function delay
+. background-color 5s linear 1s
+</code></pre>
+
+<p><strong>USE CSS TRANSFORM(ATION)S INSTEAD!</strong></p>
+
+<p><strong><em>Transformations</em></strong></p>
+
+<pre><code>. physically change the look of an element
+. can be 2D or 3D
+. translate()
+. rotate()
+. scale()
+. skey()
+. matrix()
+. perspective()
+. x, y, z
+</code></pre>
+
+<p><strong><em>Animations</em></strong></p>
+
+<pre><code>. keyframes
+. can loop
+. can start automatically
+</code></pre>
+
+<p><strong><em>Pitfalls</em></strong></p>
+
+<pre><code>. browser support?
+. do I need vendors prefixes?
+. fallbacks?
+. old browsers? cssSandpaper
+. performance?
+</code></pre>
+
+<p><strong>TEST TEST TEST!!!</strong></p>
+
+<hr><blockquote>
 <h2>
 <a name="lab-3" class="anchor" href="#lab-3"><span class="octicon octicon-link"></span></a>Lab 3</h2>
 
@@ -76,6 +226,30 @@
 <p>In the Lab3 folder you will find a todo app, powered by a custom js Framework.</p>
 
 <p><strong><em>3/4/2014 UPDATE: The "click" functionality is still to be added later on.</em></strong></p>
+
+<h4>
+<a name="lessons-learned-2" class="anchor" href="#lessons-learned-2"><span class="octicon octicon-link"></span></a>Lesson's learned</h4>
+
+<pre><code>. DRY = DON'T REPEAT YOURSELF
+. function's aren't flexible enough for large apps
+</code></pre>
+
+<p>*** USE PROTOTYPES ***</p>
+
+<pre><code>HTMLElement.prototype.changeColor = function(color)
+{
+    this.style['color'] = color;
+}
+document.getElementById('elem').changeColor('purple');
+</code></pre>
+
+<p><strong><em>Prototypes</em></strong></p>
+
+<pre><code>. != DRY
+. ultimate flexibility
+. don't extend DOM
+. create wrapper objects instead
+</code></pre>
 
 <hr><blockquote>
 <h2>
@@ -92,6 +266,20 @@
 <li>
 <strong>weatherApp_v2</strong>: This is my finished product built on <strong>Bootstrap</strong>. It's a minimal weather app, based on a design I found on the internet. (<strong><em>The design is included in the folder gfx</em></strong>)</li>
 </ul><p>You can check out the finished product here: <a href="http://www.yannicknijs.be/weather/">www.yannicknijs.be/weather/</a></p>
+
+<h4>
+<a name="lessons-learned-3" class="anchor" href="#lessons-learned-3"><span class="octicon octicon-link"></span></a>Lessons learned</h4>
+
+<pre><code>. AJAX (asynchronous javascript and XML / JSON)
+. JSON (javascript object notation)
+. XMLHttpRequest();
+. Samen-origin policy
+. JSONP (JSON with padding) : callbacks
+. CORS (alternative to JSONP)
+. localstorage (much like a cookie)
+. geolocation
+. fastclick.js (remove 300ms delay on mobile devices)
+</code></pre>
 
 <hr><blockquote>
 <h2>
@@ -111,13 +299,47 @@
 <p>Introduction to Nodejs, Express and Web sockets</p>
 </blockquote>
 
-<p>In the Lab6 folder you will find my first attempt to built a nodejs application.</p>
+<p><strong><em>What is node.js?</em></strong></p>
 
-<ul>
-<li>nodejs: Live voting on drinks</li>
-<li>imdwall: voting on questions, built on <strong>Bootstrap</strong>
-</li>
-</ul><p><strong><em>4/04/2014 UPDATE: It still needs some work.</em></strong></p>
+<p>Node.js is a server-side javascript built on google's v8 javascript engine.</p>
+
+<p>You can do what PHP does, but then with javascript.</p>
+
+<p>Ideal for event-driven apps which are continiously updated when new data is available.</p>
+
+<pre><code>. performance oriented
+. non blocking io (input/output )
+. accept more requests at the same time
+</code></pre>
+
+<p><strong><em>Why node.js?</em></strong></p>
+
+<p>It's javascript on the server, which is great for front-end developers who code JS anyway</p>
+
+<pre><code>. full stack js development
+. fast &amp; event-driven
+. asynchronous (uses callbacks)
+. modular
+. in high demand!
+</code></pre>
+
+<p>In node.js we only have one <strong>single thread</strong> combined with and event-drive architecture. Unlike PHP where every incoming HTTP request gets its own thread. (uses more memory and waits until execution is done)</p>
+
+<h4>
+<a name="lessons-learned-4" class="anchor" href="#lessons-learned-4"><span class="octicon octicon-link"></span></a>Lessons learned</h4>
+
+<p>Node is probably the hardest thing we've seen this school year. </p>
+
+<pre><code>. npm (node package manager)
+. express (node webapp framework)
+. faye (pub/sub)
+. jade (node template engine)
+. nodemon (monitor node app)
+. routes
+. views
+. npm install (install dependencies)
+. package.json (node info file)
+</code></pre>
 
 <hr><blockquote>
 <h2>
@@ -126,6 +348,28 @@
 <p>Introduction to Sass, a css preprocessor.</p>
 </blockquote>
 
+<p><strong>SYNTHETICALLY AWESOME STYLESHEETS</strong></p>
+
+<p><strong><em>Why SASS, why use a pre-processor?</em></strong></p>
+
+<pre><code>. less code
+. variables
+. mixins
+. organise CSS
+</code></pre>
+
+<h4>
+<a name="lessons-learned-5" class="anchor" href="#lessons-learned-5"><span class="octicon octicon-link"></span></a>Lessons learned</h4>
+
+<pre><code>. imports
+. variables
+. nesting
+. mixins
+. operators
+. SASS Frameworks (Bourbon, Compass)
+. livejs (bye F5)
+</code></pre>
+
 <hr><blockquote>
 <h2>
 <a name="lab-8" class="anchor" href="#lab-8"><span class="octicon octicon-link"></span></a>Lab 8</h2>
@@ -133,10 +377,69 @@
 <p>Backbone.js workshop and live coding session, hosted by District01.</p>
 </blockquote>
 
-<hr>
-      </section>
-    </div>
+<hr><blockquote>
+<h2>
+<a name="lab-9" class="anchor" href="#lab-9"><span class="octicon octicon-link"></span></a>Lab 9</h2>
 
-    
+<p>Introduction to Gulp, a task runner.</p>
+</blockquote>
+
+<h4>
+<a name="lessons-learned-6" class="anchor" href="#lessons-learned-6"><span class="octicon octicon-link"></span></a>Lessons learned</h4>
+
+<pre><code>. gulp
+. minify-css
+. concat-css
+. gulp-watch
+. imagemin
+. gulpfile.js
+</code></pre>
+
+<hr><blockquote>
+<h2>
+<a name="lab-10" class="anchor" href="#lab-10"><span class="octicon octicon-link"></span></a>Lab 10</h2>
+
+<p>Angular.js workshop, hosted by District01.</p>
+</blockquote>
+
+<hr><blockquote>
+<h2>
+<a name="final-webtech-project" class="anchor" href="#final-webtech-project"><span class="octicon octicon-link"></span></a>Final Webtech project</h2>
+
+<p>The amazing IMDWall.</p>
+</blockquote>
+
+<p>During workshops the /questions page will be projected onto the wall. If anyone has a question in mind, they can submit a question on the /ask page and it will be sent to the questions overview. People can vote on their favorite questions. This all happens live, without refresh. At the end of each workshop or presentation the speakers will answer the most voted questions.</p>
+
+<p><strong><em>Technologies used in my project</em></strong></p>
+
+<pre><code>. node.js (server-side javascript)
+. bootstrap (css framework)
+. heroku (free node.js hosting)
+. git / github (version control)
+. express (node.js framework)
+. faye (pub/sub)
+. jade (template engine)
+. gulp (task runner)
+</code></pre>
+
+<p><strong><em>Functionality I would love to add later on</em></strong></p>
+
+<pre><code>. mongodb / mongoose (database storage)
+. SASS (css pre-processor)
+. backbone.js or angular.js (javascript framework)
+</code></pre>
+
+<hr>
+        </section>
+
+        <footer>
+          Webtech2 is maintained by <a href="https://github.com/yncredible">yncredible</a><br>
+          This page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
+
+        
+      </div>
+    </div>
   </body>
 </html>

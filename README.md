@@ -10,6 +10,9 @@ View this repo's website here: [http://yncredible.github.io/webtech2/](http://yn
 * Lab 5:	Build Apps v2
 * Lab 6:	Nodejs
 * Lab 7:	Sass
+* Lab 8:	Backbone.js
+* Lab 9:	Gulp
+* Lab 10:	Angular.js
 
 ---
 

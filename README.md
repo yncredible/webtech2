@@ -13,6 +13,7 @@ View this repo's website here: [http://yncredible.github.io/webtech2/](http://yn
 * Lab 8:	Backbone.js
 * Lab 9:	Gulp
 * Lab 10:	Angular.js
+* FINAL		Final Project for Webtech 2
 
 ---
 

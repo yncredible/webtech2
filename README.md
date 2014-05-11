@@ -315,6 +315,8 @@ The amazing IMDWall.
 
 During workshops the /questions page will be projected onto the wall. If anyone has a question in mind, they can submit a question on the /ask page and it will be sent to the questions overview. People can vote on their favorite questions. This all happens live, without refresh. At the end of each workshop or presentation the speakers will answer the most voted questions.
 
+Alive and running: [http://dry-beach-8052.herokuapp.com/](http://dry-beach-8052.herokuapp.com/)
+
 ***Technologies used in my project***
 
 	. node.js (server-side javascript)

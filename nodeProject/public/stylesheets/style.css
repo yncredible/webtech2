@@ -6,3 +6,33 @@ body {
 a {
   color: #00B7FF;
 }
+
+#allQuestions li, 
+#allQuestionsModerate li
+{
+	margin-bottom:10px;
+}
+
+
+#allQuestions h2,
+#allQuestionsModerate h2
+{
+	font-size:16px;
+}
+
+#allQuestions blockquote,
+#allQuestionsModerate blockquote
+{
+	color:#666;
+}
+
+.voteUp,
+.voteDown
+{
+	padding:0 4px;
+}
+
+.customLabel
+{
+	color:#ccc;
+}

@@ -2,6 +2,7 @@ $(document).ready(function(){
 	console.log("ready steady");
 
 	var client = new Faye.Client('http://localhost:3000/faye');
+	// var client = new Faye.Client('http://dry-beach-8052.herokuapp.com/faye');
 
 
 	$("#feedback-success").hide();
@@ -70,7 +71,7 @@ $(document).ready(function(){
 					"<h2 class='label label-success'>" +
 					"<span class='glyphicon glyphicon-user'> "+name+" </span></h2>" +
 					"<span id='v"+i+"' class='likes badge'>"+likes+"</span>&nbsp;" +
-					"<span class='pull-right'>votes&nbsp;</span>" +
+					"<span class='pull-right customLabel'>votes&nbsp;</span>" +
 					"<blockquote><p class='question'>"+question+"</p></blockquote>" +
 					"<span>&nbsp;</span>" +
 					"<a class='voteDown pull-right' href='#'><span class='glyphicon glyphicon-thumbs-down'></span></a>" +
@@ -81,7 +82,7 @@ $(document).ready(function(){
 					"<h2 class='label label-success'>" +
 					"<span class='glyphicon glyphicon-user'> "+name+" </span></h2>" +
 					"<blockquote><p class='question'>"+question+"</p></blockquote>" +
-					"<a class='rmItem' href='#'>Delete</a>" +
+					"<a class='rmItem btn btn-danger' href='#'>Delete</a>" +
 					"</li>";
 		i++
 
@@ -137,6 +138,8 @@ $(document).ready(function(){
 			liked: liked
 		});
 
+		e.preventDefault();
+
 	});
 
 	client.subscribe('/like', function(liking){
@@ -159,6 +162,8 @@ $(document).ready(function(){
 			like: like,
 			liked: liked
 		});
+
+		e.preventDefault();
 
 	});
 

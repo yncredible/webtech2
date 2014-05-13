@@ -10,6 +10,10 @@ View this repo's website here: [http://yncredible.github.io/webtech2/](http://yn
 * Lab 5:	Build Apps v2
 * Lab 6:	Nodejs
 * Lab 7:	Sass
+* Lab 8:	Backbone.js
+* Lab 9:	Gulp
+* Lab 10:	Angular.js
+* Final Project for Webtech 2
 
 ---
 
@@ -311,7 +315,9 @@ The amazing IMDWall.
 
 During workshops the /questions page will be projected onto the wall. If anyone has a question in mind, they can submit a question on the /ask page and it will be sent to the questions overview. People can vote on their favorite questions. This all happens live, without refresh. At the end of each workshop or presentation the speakers will answer the most voted questions.
 
+
 Alive and running: [http://yncredible.herokuapp.com/](http://yncredible.herokuapp.com/)
+
 
 ***Technologies used in my project***
 
